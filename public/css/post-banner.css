@@ -1,0 +1,195 @@
+body{
+    background: white;
+}
+.create-post-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #5589C5;
+    text-decoration: none;
+    border: solid 1px #5589C5;
+    border-radius: 999px;
+    color: white;
+    padding: 10px;
+}
+
+.create-post-button:hover {
+    color: #5589C5;
+    background-color: white;
+}
+
+.post {
+    max-width: 80%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+}
+
+.user-post{
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.post-header {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.post-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: none;
+    color: #5589C5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 14px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    padding: 8px 16px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0073e6;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0073e6;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.content {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    margin-right: 15px;
+}
+
+.post-list {
+    min-width: 60%;
+    max-width: 60%;
+    margin: 40px auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a::hover{
+    color: rgb(111, 185, 235);
+}
+
+.author {
+    text-decoration: none;
+    color: rgb(111, 185, 235);
+    font-size: 12.8px;
+}
+
+.date {
+    color: #888;
+    font-size: 12.8px;
+}
+
+.view {
+    color: #888;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.title {
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 17.6px;
+}
+
+.post-card {
+    position: relative;
+    display: flex;
+    /* Đảm bảo rằng phần tử cha có thuộc tính position: relative */
+    margin-bottom: 20px;
+}
+
+.post-card::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    /* Sử dụng background-color thay vì color */
+}
+.infomation{
+    margin: 20px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal{
+    display: flex;
+}
+
+.infomtion button{
+    display: block;
+}
+
+.comment-name
+{
+    text-decoration: none;
+}

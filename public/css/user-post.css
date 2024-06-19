@@ -1,0 +1,65 @@
+.user-post-container {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+    max-width: 600px;
+    margin-left: 20%;
+}
+.user-post-content {
+    margin-bottom: 10px;
+}
+.button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.button-container button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+.button-container .edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 999px;
+}
+.button-container .delete-button {
+    background-color: #f44336;
+    color: white;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 999px;
+}
+.edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-edit-button {
+    border: solid 1px #0a53be;
+    border-radius: 999px;
+    padding: 20px;
+    height: 20px;
+    text-decoration: none;
+    background-color: #F8FAFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-edit-button:hover {
+    background-color: #0a53be;
+    color: white;
+}

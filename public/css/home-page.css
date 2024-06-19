@@ -1,0 +1,54 @@
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1937;
+    padding: 10px 20px;
+    margin-bottom: 45px;
+}
+.custom-navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.custom-navbar a:hover {
+    border-bottom: 2px solid white;
+}
+.custom-navbar .active {
+    border-bottom: 2px solid white;
+}
+.custom-navbar .nav-left, .custom-navbar .nav-right {
+    display: flex;
+    align-items: center;
+}
+.custom-navbar .nav-right .custom-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.custom-navbar .nav-right .custom-button:hover {
+    background-color: #357ab8;
+}
+.custom-dot {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.custom-button-link:hover
+{
+    text-decoration: none;
+}
+
+.py-4{
+    padding-top: 0 !important;
+}
