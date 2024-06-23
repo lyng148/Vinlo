@@ -18,7 +18,7 @@ Vinlo là một blog đơn giản được xây dựng bằng Laravel. Được 
 - Controller: Xử lý các yêu cầu của người dùng, xử lý đầu vào bằng cách sử dụng model, và chọn các view để phản hồi.
 
 ![img.png](img.png)
-### 2. Cấu trúc thư mục chinh
+### 2. Cấu trúc thư mục chính
 ```md
 |   |-- Http/
 |   |   |-- Controllers/
