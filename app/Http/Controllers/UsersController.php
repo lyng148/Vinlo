@@ -18,12 +18,14 @@ class UsersController extends Controller
         $numberOfFollowers = DB::select('select count(*) as count from follows where followed_id = ?', [$id]);
         $isFollowing = DB::select('select count(*) as count from follows where followed_id = ? and follower_id = ?', [$id, auth()->id()]);
         $followers = DB::select('select * from users where id in (select follower_id from follows where followed_id = ?)', [$id]);
+        $following = DB::select('select * from users where id in (select followed_id from follows where follower_id = ?)', [$id]);
         return view('users.profile', [
             'user' => $user,
             'posts' => $posts,
             'numberOfFollowers' => $numberOfFollowers,
             'isFollowing' => $isFollowing,
-            'followers' => $followers
+            'followers' => $followers,
+            'following' => $following
         ]);
     }
 

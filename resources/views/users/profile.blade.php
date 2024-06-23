@@ -73,7 +73,13 @@
                 @endforeach
             </div>
         </div>
-        <div id="following" class="tab-content" style="display:none;">Nội dung Series</div>
+        <div id="following" class="tab-content" style="display:none;">
+            @if(!empty($following))
+                @foreach($following as $x)
+                    <h2>{{$x->name}}</h2>
+                @endforeach
+            @endif
+        </div>
         <div id="follower" class="tab-content" style="display:none;">
             @if(!empty($followers))
                 @foreach($followers as $x)
